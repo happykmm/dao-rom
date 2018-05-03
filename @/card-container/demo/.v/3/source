@@ -1,0 +1,21 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CardContainer from '@/card-container';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+const renderItems = () => (<div>Hello</div>);
+const renderExtras = () => (<div>This is extras part</div>);
+ReactDOM.render(
+  (
+    <CardContainer 
+        title="card-container"
+        renderItems={renderItems}
+        renderExtras={renderExtras}
+    />
+  ), app,
+);
+
+

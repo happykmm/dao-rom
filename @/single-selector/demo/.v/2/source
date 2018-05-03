@@ -1,0 +1,25 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SingleSelector from '@/single-selector';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+ReactDOM.render(
+  (
+    <div>
+        <SingleSelector 
+            label="single selector shown as radio group"
+            enums={['Month', 'Week', 'Day']}
+            defaultValue={'Month'}
+        />
+        <SingleSelector 
+            label="single selector shown as select"
+            enums={['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']}
+            defaultValue={'Monday'}
+        />
+    </div>
+  ), app,
+);
+
+

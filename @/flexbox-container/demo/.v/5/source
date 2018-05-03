@@ -1,0 +1,28 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import FlexBoxContainer from '@/flexbox-container';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+const renderItems = () => (
+    <React.Fragment>
+        <span>This is item 1</span>
+        <span>This is item 2</span>
+    </React.Fragment>
+);
+
+ReactDOM.render(
+  (
+    <FlexBoxContainer 
+        renderItems={renderItems}
+        style={{
+            'flex-direction': 'row',
+            'justify-content': 'space-between',
+        }}
+    />
+  ), app,
+);
+
+

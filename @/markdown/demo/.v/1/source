@@ -1,0 +1,15 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Markdown from '@/markdown';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+ReactDOM.render(
+  (
+    <Markdown value='### 促销方案推荐' />
+  ), app,
+);
+
+

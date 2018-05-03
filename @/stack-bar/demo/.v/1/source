@@ -1,0 +1,32 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import StackBar from '@/stack-bar';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+    
+ReactDOM.render(
+  (
+    <StackBar
+        source={
+            [{
+                timestamp: '2018/1/1',
+                value: 10,
+            }, {
+                timestamp: '2018/1/2',
+                value: 20,
+            }, {
+                timestamp: '2018/1/3',
+                value: 40,
+            }, {
+                timestamp: '2018/1/4',
+                value: 48,
+            }]
+        }
+        axisDimensions={['timestamp']}
+        metricDimensions={['value']}
+    />
+  ), app,
+);
+
+

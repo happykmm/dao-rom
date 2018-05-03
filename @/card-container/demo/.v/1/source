@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CardContainer from '@/card-container';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+ReactDOM.render(
+  (
+    <CardContainer 
+        title="card-container"
+    />
+  ), app,
+);
+
+
