@@ -1,0 +1,19 @@
+import 'css!antd.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import FormField from '@/form-field';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+ReactDOM.render(
+  (
+    <FormField 
+        label="Form field"
+        value="initial value"
+    />
+  ), app,
+);
+
+

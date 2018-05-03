@@ -1,0 +1,18 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SingleSelector from '@/single-selector';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+ReactDOM.render(
+  (
+    <SingleSelector 
+        label="granularity"
+        enums={['Month', 'Week', 'Day']}
+        defaultValue={'Month'}
+    />
+  ), app,
+);
+
+

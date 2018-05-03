@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MultiSelector from '@/multi-selector';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+ReactDOM.render(
+  (
+    <MultiSelector  
+        label="multi selector"
+        defaultValue="卡种"
+        enums={['卡种', '餐厅', '冲值类型', '用餐时段']}
+    />
+  ), app,
+);
+
+

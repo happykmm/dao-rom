@@ -1,0 +1,1 @@
+{"type":"es2015","description":"A group of radio components.","dependencies":{"react":"*","prop-types":"*","antd":"*","lodash":"*"},"category":["component","slicer"]}

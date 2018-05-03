@@ -1,0 +1,6 @@
+### API
+
+| parameter | description | type | default value |
+|-----------|-------------|------|---------------|
+| source | the data to render | Array\[] | |
+

@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TimeRangePicker from '@/time-range';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+ReactDOM.render(
+  (
+    <TimeRangePicker 
+        start="2018-03-01"
+        end="2018-04-01"
+        label="time range"
+    />
+  ), app,
+);
+
+

@@ -1,0 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import RadioGroup from '@/radio-group';
+import 'css!antd.css';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+  
+ReactDOM.render(
+  (
+    <RadioGroup 
+        label="granularity"
+        enums={['Month', 'Week', 'Day']}
+        defaultValue={'Month'}
+    />
+  ), app,
+);
+
+

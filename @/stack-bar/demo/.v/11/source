@@ -1,0 +1,49 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import StackBar from '@/stack-bar';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+    
+ReactDOM.render(
+  (
+    <StackBar value={{
+        source: [{
+                Day: '周一',
+                谷歌: 10,
+                必应: 30,
+            }, {
+                Day: '周二',
+                谷歌: 20,
+                必应: 20,
+            }, {
+                Day: '周三',
+                谷歌: 40,
+                必应: 40,
+            }, {
+                Day: '周四',
+                谷歌: 48,
+                必应: 48,
+            }, {
+                Day: '周五',
+                谷歌: 20,
+                必应: 34,
+            }, {
+                Day: '周六',
+                谷歌: 30,
+                必应: 35,
+            }, {
+                Day: '周日',
+                谷歌: 35,
+                必应: 60,
+            }],
+        axisDimensions: ['Day'],
+        // Metric dimensions prop is optional.
+        // If not specified, all dimensions except axis dimensions would be used.
+        metricDimensions: ['谷歌', '必应'],
+        isHorizontal: true,
+    }} />
+  ), app,
+);
+
+

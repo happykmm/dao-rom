@@ -1,0 +1,34 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Bar from '@/bar';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+    
+    
+ReactDOM.render(
+  (
+    <Bar
+        title="Title"
+        subTitle="Subtitle"
+        source={
+        [{
+            season: 'spring',
+            value: 10,
+        }, {
+            season: 'summer',
+            value: 20,
+        }, {
+            season: 'autumn',
+            value: 40,
+        }, {
+            season: 'winter',
+            value: 80,
+        }]
+        }
+    />
+  ), app,
+);
+
+

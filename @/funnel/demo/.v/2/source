@@ -1,0 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Funnel  from '@/funnel';
+
+const app = document.createElement('div');
+document.body.appendChild(app);
+
+const source = [
+  ['name', 'value'],
+  ['访问', 60],
+  ['咨询', 40],
+  ['订单', 20],
+  ['点击', 80],
+  ['展现', 110],
+];
+    
+ReactDOM.render(
+  (
+    <Funnel source={source} />
+  ), app,
+);
+
+

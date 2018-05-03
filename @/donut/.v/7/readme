@@ -1,0 +1,7 @@
+### API
+
+| parameter | description | type | default value |
+|-----------|-------------|------|---------------|
+| value.source | the data to render | Object\[] | |
+| title | title of donut chart | string | |
+| subTitle | sub title of donut chart | string | |
